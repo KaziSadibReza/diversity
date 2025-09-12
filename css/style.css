@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1400px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  background-color: #f6931d;
+  padding: 15px 20px;
+  border-radius: 60px;
+  color: #fff;
+}
+
+.text-sm {
+  font-size: 16px;
+}
+
+.text-lg {
+  font-size: 48px;
+}
+
+.text-des {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -2%;
+  line-height: 112.00000000000001%;
+}
+
+/*================= Header start here ===================*/
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  position: absolute;
+  z-index: 2;
+}
+
+.header .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: #fff;
+  padding: 12px 27px;
+  border-radius: 60px;
+}
+
+.header .main .header-first-section .logo {
+  width: 400px;
+  height: 60px;
+}
+
+.header .main .menus {
+  display: flex;
+  gap: 40px;
+}
+
+.header .main .menus .menu-item a {
+  color: #1a5b81;
+}
+
+.header .header-secend-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+/*================= Header end here ===================*/
+
+/* ============= banner start here =============== */
+.banner {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 30px;
+}
+.banner .main {
+  background: url(../img/banner.png) center no-repeat;
+  background-size: cover;
+  height: 866px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  gap: 20px;
+}
+.banner .title {
+  font-size: 64px;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  line-height: 112.00000000000001%;
+  letter-spacing: -2%;
+}
+.banner .text-des {
+  color: #fff;
+  text-align: center;
+}
+
+/* ============= banner end here =============== */
