@@ -13,6 +13,13 @@
       rel="stylesheet"
     />
 
+    <!-- font awesome linked here -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- css linked here -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -55,17 +62,42 @@
           </h1>
           <p class="text-des">
             At the intersection of technology and inclusion, we are committed to
-            advancing ethical artificial intelligence while creating pathways
-            for underrepresented communities.
+            advancing <br />
+            ethical artificial intelligence while creating pathways for
+            underrepresented communities.
           </p>
-          <input
-            type="text"
-            placeholder="Search programs, resources, or events..."
-          />
+          <form class="" id="search-form" action="">
+            <label for="search-input" class="sr-only">Search</label>
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Search programs, resources, or events..."
+              aria-label="Search programs, resources, or events"
+            />
+            <button id="search-submit" type="submit" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
           <a class="btn" href="">Get Involved</a>
         </div>
       </div>
     </section>
     <!-- ============= Banner section end here ================= -->
+
+    <!-- ============= Popup Modal HTML =============== -->
+    <div id="popup" class="popup-overlay">
+      <div class="popup-content">
+        <button id="close-popup" aria-label="Close popup">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2 class="text-lg">Your Search</h2>
+        <p id="popup-message"></p>
+      </div>
+    </div>
+
+    <!-- ============= Popup Modal HTML end here =============== -->
+
+    <!-- js linked here -->
+    <script src="./js/app.js"></script>
   </body>
 </html>
