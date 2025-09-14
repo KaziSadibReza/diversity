@@ -3,8 +3,9 @@
   padding: 0;
 }
 
-.container {
-  width: 1400px;
+body {
+  background-color: #fff9f2;
+  font-family: "Montserrat", sans-serif;
 }
 
 ul,
@@ -30,11 +31,22 @@ button {
   font-family: "Montserrat", sans-serif;
 }
 
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
 .btn {
   background-color: #f6931d;
   padding: 15px 20px;
   border-radius: 60px;
   color: #fff;
+}
+
+.title-sm {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -2%;
+  line-height: 112.00000000000001%;
 }
 
 .text-sm {
@@ -260,3 +272,61 @@ button {
   justify-content: center;
 }
 /* ============= Popup Modal Styles End =============== */
+/* ============= About Section Start =============== */
+.about {
+  padding: 60px 0;
+}
+
+.about .main {
+  display: flex;
+  gap: 120px;
+  align-items: center;
+}
+.about .main .left-con {
+  background-image: url(../img/about-bg.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.about .main .left-con img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.about .main .left-con .text-box {
+  position: absolute;
+  width: 300px;
+  background-color: #f6931d;
+  top: 70%;
+  right: -10%;
+  z-index: 10000000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about .main .left-con .text-box .title-sm {
+  color: #fff;
+}
+.about .main .left-con .text-box .text-des {
+  color: #fff;
+}
+
+.about .main .right-con {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.about .main .right-con .title-sm {
+  color: #f6931d;
+}
+.about .main .right-con .text-des {
+  line-height: 185%;
+}
+
+/* ============= About Section End =============== */
